@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    src: url(../fontes/idroid.otf);
+    font-family: 'idroid';    
+    font-weight: normal;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c5ebd6;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+header {
+    background-image: linear-gradient(#3CDA83, #185432);
+    margin: 0px;
+    min-height: 150px;
+    min-width: 340px;
+    padding-top: 40px;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 44%);
+
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 2px black ;
+    margin-top: 0px;
+}
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 1px 1px 2px black ;
+}
+nav {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 10px;
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    text-shadow: 1px 1px 2px black ;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+
+nav > a:hover {
+    background-color: #3CDA83;
+    color: #185432;
+    
+}
+
+main{
+    min-width: 300px;
+    max-width: 800px;
+    background-color: white;
+    margin: 15px auto 0px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 44%);
+}
+
+main p {
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+#main2 {
+    min-width: 300px;
+    max-width: 800px;
+    background-color: white;
+    margin: 0px auto 15px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 44%);
+}
+
+#main2 p {
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+strong {
+    color: #3E7959;
+}
+
+article > h1 {
+    font-family: 'idroid', arial, sans-serif;
+    font-weight: normal;
+    color: #296746;
+    font-size: xx-large;
+    margin-top: 5px;
+}
+
+article > h2 {
+    font-weight: normal;
+}
+
+article > p {
+    text-align: justify;
+}
+
+article > p > a {
+    background-color: #3CDA83;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3E7959;
+    padding: 2px 6px;
+}
+
+article > p > a:hover {
+    background-color: #3CDA83;
+    text-decoration: underline;
+    padding: 2px 6px;
+}
+
+.titulo_verde {
+    font-family: 'idroid', arial, sans-serif;
+    color: #296746;
+    background-image: linear-gradient(to right ,#C5EBD5, rgba(24, 84, 50, 0));
+}
+
+img {
+    width: 100%;
+    display: block;
+    
+}
+
+img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+    
+}
+
+div#video {
+    background-color: #185432;
+    margin: 0px auto 0px;
+    padding: 20px;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 44%);
+    min-width: 300px;
+    max-width: 800px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+div > iframe {
+    max-width: 100%;
+    margin: 30px 0px 30px 0px;
+    display: block;
+}
+
+main > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #2FA866;
+    color: white;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#caixa_lista {
+    background-color: #C5EBD6;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#caixa_lista > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+div#caixa_lista > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3E7959;
+    background-color: #3CDA83;
+    padding: 2px 6px;
+}
+
+div#caixa_lista > p > a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "✔";
+}
+.coluna-50 {
+    width: 50%;
+}
+footer {
+    background-color: #1A5C38;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2px;
+    margin-bottom: 0px;
+}
+
+footer > p {
+    margin: 5px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2FA866;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
