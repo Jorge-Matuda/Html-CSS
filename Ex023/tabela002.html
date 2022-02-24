@@ -12,18 +12,42 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
+
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(85, 85, 85);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 85, 85);
+        }
+
+        tbody > tr:nth-child(odd) { /* ou (2n-1) */
+            background-color: lightgrey;
+        }
+
         td.num {
             text-align: right;
         }
+        
 
     </style>
 </head>
@@ -32,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -40,10 +65,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,10 +184,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes 2010</th>
+                <th scope="row">Total de Habitantes 2010</th>
                 <td class="num"><strong>190.732.694</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium et consequatur, quibusdam voluptatibus quia, cumque eius ex sed exercitationem numquam quisquam necessitatibus mollitia ut impedit dignissimos harum reprehenderit delectus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sit iste placeat rem nihil ullam ab? Quam similique tenetur est, quidem accusamus voluptatem non repudiandae dolorem blanditiis. Nobis, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor impedit maxime dolorum expedita minus eaque alias molestias sequi? Non tenetur nulla laboriosam harum voluptatibus dolorem optio ut nostrum minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis amet harum, modi vero sunt explicabo incidunt quae a, nemo hic dignissimos nobis nostrum autem dicta eligendi aperiam accusantium quo facere!</p>
 </body>
 </html>
