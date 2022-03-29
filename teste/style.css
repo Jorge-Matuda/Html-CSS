@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    border: 3px solid white;
+    border-radius: 10px;
+    }
+
+h1{ 
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: -0.2px;
+    border-radius: 5px;
+}
+
+h2{
+    color: rgb(177, 52, 52);
+
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin: 1px;
+}
+
+span{
+    color: rgb(177, 52, 52);
+}
+
+li{
+    margin: 5px;
+}
+.Sublinhado{
+    
+    color: aliceblue;
+}
+
+.top{
+    text-align: center;
+
+}
+
+.aux{
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.corpo{
+    text-align: justify;
+}
